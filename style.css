@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.view-container {
+    height: 100vh;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.speaker {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+
+}
+
+.speaker-icons {
+    position: absolute;
+    right: 4px;
+    top: 0;
+    color: white;
+}
+
+.speaker-icons span {
+    background-color: rgb(56 56 56);
+    border-radius: 5%;
+    padding: 2px 5px;
+    font-size: 11px;
+
+}
+
+.main-container {
+    background-color: black;
+}
+
+.item-container {
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 8px 5px;
+
+}
+
+.item {
+    flex-basis: 200px;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    color: white;
+    font-size: 16px;
+}
+
+
+.controller {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(56 56 56);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controller i {
+    color: white;
+    font-size: 30px;
+}
+
+.middle i {
+    padding-right: 35px;
+}
+
+.controller .right {
+    padding: 0% 1%;
+    height: 100%;
+    color: red;
+    background-color: gray;
+    line-height: 70px;
+
+}
+
+/* DEBUG */
+/* .view-container,
+.speaker,
+.main.container,
+.controller {
+    background-color: aqua;
+    border: 1px solid;
+} */
