@@ -36,7 +36,7 @@
 
 .item-container {
     width: 100%;
-    max-height: 90vh;
+    max-height: calc(100vh - 40px - 70px);
     margin: auto;
     background-color: black;
     display: flex;
@@ -75,7 +75,7 @@
     left: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 .controller i {
@@ -83,28 +83,50 @@
     font-size: 30px;
 }
 
-.middle i {
-    padding-right: 35px;
+.left,
+.middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.middle-icon i,
+.left-icon i {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#arrow-up {
+    font-size: 14px;
+}
+
+#green {
+    color: rgb(25, 176, 25);
 }
 
 .controller .right {
     padding: 0% 1%;
     height: 100%;
     color: red;
+    font-size: 13px;
+    font-weight: bold;
     background-color: gray;
     line-height: 70px;
 }
 
-.controller-icon {
+/* .controller-icon {
     display: inline-block;
-}
+} */
 
-#up {
-    font-size: 10px;
-    line-height: 70px;
-}
 
-/* DEBUG */
+/* //////////////////////////DEBUG////////////////////////// */
 /* .view-container,
 .speaker,
 .main.container,
